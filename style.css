@@ -1,0 +1,149 @@
+/* Html */
+body {
+  font-family: "Poppins";
+}
+/* EndHtml */
+/* Nav */
+nav {
+  background-color: #f6ffde;
+  font-weight: bolder;
+  box-shadow: 1px;
+}
+button {
+  background-color: #c9dbb2;
+  border: none;
+}
+
+/* EndNav */
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(#f6ffde, #c9dbb2);
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.jumbotron .container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.sideright {
+  justify-content: center;
+  order: 2;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+.sideleft {
+  justify-content: center;
+  flex: 30%;
+  order: 1;
+}
+.sideleft img {
+  width: 100%;
+}
+/* End */
+/* About */
+.about {
+  background: linear-gradient(#c9dbb2, #e3f2c1);
+}
+.about .container {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 10px;
+}
+.aboutright {
+  flex: 50%;
+}
+.aboutleft {
+  flex: 50%;
+}
+/* Project */
+.project {
+  padding-bottom: 50px;
+  background: linear-gradient(#e3f2c1, #c9dbb2);
+}
+.project .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  width: 15rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.contact {
+  background: linear-gradient(#c9dbb2, #e3f2c1);
+  padding-bottom: 100px;
+}
+/* Responsiv */
+@media screen and (min-width: 320px) and (max-width: 765px) {
+  /* Jumbotron */
+  .jumbotron {
+    padding-top: 50px;
+  }
+  .jumbotron .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sideleft img {
+    text-align: center;
+    width: 100%;
+  }
+  .sideright {
+    text-align: center;
+    padding-top: -100px;
+    margin-top: 30px;
+  }
+  /* End */
+  .about .container {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .aboutleft {
+    flex: 100%;
+  }
+  /* End */
+  .project .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    max-width: 10rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* Jumbotron */
+  .jumbotron {
+    padding-top: 50px;
+  }
+  .jumbotron .container {
+    justify-content: center;
+  }
+  .sideleft img {
+    width: 280px;
+    justify-content: center;
+  }
+  .sideleft {
+    margin-right: 10px;
+    text-align: center;
+  }
+  .sideright {
+    margin-right: 10px;
+    padding-top: -100px;
+    margin-top: 30px;
+  }
+  .project .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 13rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
